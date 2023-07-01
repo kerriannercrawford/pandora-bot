@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>Hello user! I am here to help you choose a career in Computer Science. Say "I am ready" when you are ready to begin.</template>
+  </category>
+
+<category>
+    <pattern>I am ready</pattern>
+    <template><button>
+    <text>Let's begin!</text>
+    <postback>READY</postback>
+</button></template>
+</category>
+
+<category>
+    <pattern>READY</pattern>
+    <template>Great! Let's start. 
+
+Tell me, which of these do you prefer?
+
+<button>  <text>Writing Code</text>
+<postback>WRITECODE</postback>
+</button>
+
+<button>  <text>Reading Code</text>
+<postback>READCODE</postback>
+</button>
+<button>  <text>Both</text>
+<postback>BOTHCODE</postback>
+</button></template>
+</category>
+
+<category>
+    <pattern>BOTHCODE</pattern>
+    <template>Me too!
+    Now, do you find yourself to be more analytical or creative?
+    <button><text>Analytical</text>
+    <postback>ANALYTICAL</postback>
+</button>
+<button>  <text>Creative</text>
+<postback>CREATIVE</postback>
+</button>
+    </template>
+</category>
+<category>
+    <pattern>CREATIVE</pattern>
+    <template>I think you might like the Full Stack Software Engineer career! This will give you a chance to utilize your creativity as well as give you a chance to be reading and WRITING code!
+    <button>  <text>Try again?</text>
+<postback>READY</postback>
+</button></template>
+</category>
+<category>
+    <pattern>ANALYTICAL</pattern>
+    <template>I think you might like the DevOps Engineer career! This will give you a chance to utilize your analytical skills as well as give you a chance to be reading and WRITING code!
+        <button>  <text>Try again?</text>
+<postback>READY</postback>
+</button></template>
+</category>
+
+<category>
+    <pattern>WRITECODE</pattern>
+    <template>Writing code is pretty great. 
+    Do you think that you would enjoy taking a set of requirements and turning them into a User Interface or building them into a new API?
+        <button><text>User Interface</text>
+    <postback>USERINTERFACE</postback>
+</button>
+<button>  <text>API</text>
+<postback>API</postback>
+</button>
+    </template>
+</category>
+
+<category>
+    <pattern>USERINTERFACE</pattern>
+    <template>I think you might enjoy the Front End Software Engineer career. This will give you a chance to be building hands on code, and using your design skills to build a functional and responsive UI.
+        <button>  <text>Try again?</text>
+<postback>READY</postback>
+</button></template>
+</category>
+
+<category>
+    <pattern>API</pattern>
+    <template>I think you might enjoy the Backend Software Engineer career! Building out the backend is all about utilizing and building APIs.
+        <button>  <text>Try again?</text>
+<postback>READY</postback>
+</button></template>
+</category>
+
+<category>
+    <pattern>READCODE</pattern>
+    <template>I don't blame you!
+    What kind of code do you like to read?
+            <button><text>Regular software code</text>
+    <postback>REGULAR</postback>
+</button>
+<button>  <text>Outputs of software code</text>
+<postback>OUTPUT</postback>
+</button>
+    </template>
+</category>
+
+<category>
+    <pattern>REGULAR</pattern>
+    <template>I think you might enjoy the Software Quality Assurance career! You will get to spend time reading code written by other engineers and ensure there aren't bugs. 
+        <button>  <text>Try again?</text>
+<postback>READY</postback>
+</button></template>
+</category>
+
+<category>
+    <pattern>OUTPUT</pattern>
+    <template>I think you might enjoy the Data Analysis career. This will allow you to take software code and output it into data that you can visualize and make predictions from.
+        <button>  <text>Try again?</text>
+<postback>READY</postback>
+</button></template>
+</category>
+
+
+</aiml>
